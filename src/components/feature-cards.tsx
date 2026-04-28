@@ -62,7 +62,7 @@ export function FeatureCards() {
   };
 
   return (
-    <motion.div 
+    <motion.div
       ref={ref}
       className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-24 px-8 md:px-16 max-w-7xl mx-auto mb-24"
       variants={containerVariants}
@@ -72,8 +72,8 @@ export function FeatureCards() {
       {features.map((feature, index) => (
         <motion.div
           key={index}
-          variants={cardVariants}
-          whileHover={{ 
+          variants={cardVariants as any}
+          whileHover={{
             y: -10,
             transition: { duration: 0.3 }
           }}
@@ -82,7 +82,7 @@ export function FeatureCards() {
             className={`glass-panel border-white/10 rounded-2xl group ${feature.hoverBorder} transition-all duration-300 bg-transparent shadow-none h-full`}
           >
             <CardHeader>
-              <motion.div 
+              <motion.div
                 className={`w-12 h-12 rounded-xl ${feature.bgColor} flex items-center justify-center mb-4`}
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 transition={{ type: "spring", stiffness: 300, damping: 10 }}
@@ -94,7 +94,7 @@ export function FeatureCards() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <motion.p 
+              <motion.p
                 className="text-slate-400 text-sm leading-relaxed"
                 initial={{ opacity: 0.7 }}
                 whileInView={{ opacity: 1 }}
