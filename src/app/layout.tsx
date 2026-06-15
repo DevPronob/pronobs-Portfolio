@@ -10,7 +10,7 @@ const spaceGrotesk = Space_Grotesk({
 
 
 export const metadata: Metadata = {
-  title: "CosmicDev | Pranab Roy Bormon - Full Stack Web Developer",
+  title: "Pranab Roy Bormon - Full Stack Web Developer",
   description: "Comilla, Bangladesh based Full Stack Web Developer crafting high-performance, cosmic-themed digital experiences.",
 };
 
