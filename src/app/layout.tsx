@@ -10,8 +10,8 @@ const spaceGrotesk = Space_Grotesk({
 
 
 export const metadata: Metadata = {
-  title: "CosmicDev | James Smith - Web Designer",
-  description: "New York based Web Designer and Creative Developer crafting high-performance, cosmic-themed digital experiences.",
+  title: "CosmicDev | Pranab Roy Bormon - Full Stack Web Developer",
+  description: "Comilla, Bangladesh based Full Stack Web Developer crafting high-performance, cosmic-themed digital experiences.",
 };
 
 import { ThemeProvider } from "@/components/theme-provider";
