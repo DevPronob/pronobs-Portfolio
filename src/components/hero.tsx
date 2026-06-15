@@ -50,33 +50,33 @@ export function Hero() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
         
         {/* Portrait Left */}
-        <div ref={imageRef} className="lg:col-span-5 relative group">
-          <div className="absolute -inset-4 bg-primary/20 rounded-[2rem] blur-2xl group-hover:bg-primary/30 transition-all" />
-          <div className="relative aspect-[4/5] rounded-[2rem] overflow-hidden border-4 border-yellow-400 shadow-2xl">
+        <div ref={imageRef} className="lg:col-span-5 relative group flex justify-center items-center">
+          <div className="absolute -inset-4 bg-primary/20 rounded-full blur-2xl group-hover:bg-primary/30 transition-all" />
+          <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/20 dark:border-white/10 shadow-2xl">
             <motion.img 
-              src="https://i.ibb.co.com/gMLP3vcT/unnamed-2-1.png" 
+              src="/profile.jpg" 
               alt="Pranab Roy Bormon" 
               className="w-full h-full object-cover"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.6 }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-midnight/40 via-transparent to-transparent opacity-60" />
+            <div className="absolute inset-0 bg-gradient-to-t from-midnight/20 via-transparent to-transparent opacity-40" />
           </div>
           
           {/* Decorative Elements */}
           <motion.div 
-            className="absolute -bottom-6 -left-6 w-32 h-32 border-l-4 border-b-4 border-primary/40 rounded-bl-3xl"
+            className="absolute -bottom-4 -left-4 w-24 h-24 border-l-4 border-b-4 border-primary/30 rounded-bl-full pointer-events-none"
             animate={{ 
-              scale: [1, 1.05, 1],
-              opacity: [0.4, 0.6, 0.4] 
+              scale: [1, 1.03, 1],
+              opacity: [0.3, 0.5, 0.3] 
             }}
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
           />
           <motion.div 
-            className="absolute -top-6 -right-6 w-32 h-32 border-r-4 border-t-4 border-primary/40 rounded-tr-3xl"
+            className="absolute -top-4 -right-4 w-24 h-24 border-r-4 border-t-4 border-primary/30 rounded-tr-full pointer-events-none"
             animate={{ 
-              scale: [1, 1.05, 1],
-              opacity: [0.4, 0.6, 0.4] 
+              scale: [1, 1.03, 1],
+              opacity: [0.3, 0.5, 0.3] 
             }}
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
           />
