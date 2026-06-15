@@ -128,7 +128,7 @@ export function Hero() {
               whileTap={{ scale: 0.98 }}
             >
               <a 
-                href="https://drive.google.com/file/d/1pjo9PA7q5sM3m_G0dgfGYnN-PYZQYeBP/view?usp=drive_link" 
+                href="https://drive.google.com/file/d/1GiIraou43LYplwUZbenvVsGD9LIAaLuY/view?usp=sharing" 
                 target="_blank"
                 rel="noopener noreferrer"
               >
